@@ -1,0 +1,38 @@
+%ic {
+	font-family: "icons";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+[class*="_icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+._icon-cart:before {
+	content: "\e900";
+}
+._icon-car:before {
+	content: "\e901";
+}
+._icon-flag:before {
+	content: "\e902";
+}
+._icon-play:before {
+	content: "\e903";
+}
+._icon-return:before {
+	content: "\e904";
+}
+._icon-storage:before {
+	content: "\e905";
+}
+._icon-arrow:before {
+	content: "\e906";
+}

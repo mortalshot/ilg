@@ -1,0 +1,52 @@
+//<BUTTONS (a.btn+tab)>
+// Снипет (HTML): btn
+
+.btn {
+	display: inline-flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	cursor: pointer;
+	border-radius: rem(18) !important;
+	gap: rem(12);
+	@include adaptiveValue("padding-top", 15, 12);
+	@include adaptiveValue("padding-bottom", 15, 12);
+	@include adaptiveValue("padding-left", 32, 24);
+	@include adaptiveValue("padding-right", 32, 24);
+	font-weight: 600;
+	line-height: math.div(30, 20);
+	transition: $transition ease all 0s;
+
+	i {
+		@include adaptiveValue("font-size", 24, 20, 1920, 992, 1);
+	}
+
+	&[type="submit"] {
+		-webkit-appearance: none;
+	}
+
+	// .btn_blue
+	&_blue {
+		color: $mainColor;
+		background-color: $LBlue;
+
+		@media (any-hover: hover) {
+			&:hover {
+				color: $White;
+				background-color: rgba($color: $Violet, $alpha: 0.8);
+			}
+		}
+	}
+
+	// .btn_violet
+	&_violet {
+		color: $White;
+		background-color: $Violet;
+
+		@media (any-hover: hover) {
+			&:hover {
+				background-color: rgba($color: $Violet, $alpha: 0.8);
+			}
+		}
+	}
+}
