@@ -399,6 +399,8 @@ export function tabs() {
 				if (tabsTitles[index].classList.contains('_tab-active')) {
 					if (tabsBlockAnimate) {
 						_slideDown(tabsContentItem, tabsBlockAnimate);
+						tabsContentItem.classList.remove('_hide');
+						tabsContentItem.classList.add('_show');
 					} else {
 						tabsContentItem.hidden = false;
 					}
@@ -408,6 +410,8 @@ export function tabs() {
 				} else {
 					if (tabsBlockAnimate) {
 						_slideUp(tabsContentItem, tabsBlockAnimate);
+						tabsContentItem.classList.add('_hide');
+						tabsContentItem.classList.remove('_show');
 					} else {
 						tabsContentItem.hidden = true;
 					}

@@ -229,9 +229,17 @@
                 tabsTitles = Array.from(tabsTitles).filter((item => item.closest("[data-tabs]") === tabsBlock));
                 tabsContent.forEach(((tabsContentItem, index) => {
                     if (tabsTitles[index].classList.contains("_tab-active")) {
-                        if (tabsBlockAnimate) _slideDown(tabsContentItem, tabsBlockAnimate); else tabsContentItem.hidden = false;
+                        if (tabsBlockAnimate) {
+                            _slideDown(tabsContentItem, tabsBlockAnimate);
+                            tabsContentItem.classList.remove("_hide");
+                            tabsContentItem.classList.add("_show");
+                        } else tabsContentItem.hidden = false;
                         if (isHash && !tabsContentItem.closest(".popup")) setHash(`tab-${tabsBlockIndex}-${index}`);
-                    } else if (tabsBlockAnimate) _slideUp(tabsContentItem, tabsBlockAnimate); else tabsContentItem.hidden = true;
+                    } else if (tabsBlockAnimate) {
+                        _slideUp(tabsContentItem, tabsBlockAnimate);
+                        tabsContentItem.classList.add("_hide");
+                        tabsContentItem.classList.remove("_show");
+                    } else tabsContentItem.hidden = true;
                 }));
             }
         }

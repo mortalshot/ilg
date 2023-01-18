@@ -75,7 +75,7 @@ function addGsapAnimation() {
          },
       });
    }
-
+   
    // Секция tools
    const toolsCards = document.querySelectorAll('.tools__card');
    if (toolsCards.length > 0) {
