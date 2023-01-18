@@ -1142,7 +1142,7 @@ section:first-child {
   background: rgba(239, 242, 252, 0.4) url(../img/home/firstscreen-bg.png) no-repeat bottom center/cover; }
 
 .firstscreen {
-  background-attachment: fixed;
+  background-attachment: fixed !important;
   position: relative;
   padding-bottom: 0;
   min-height: calc(var(--vh, 1vh) * 100 - var(--header-height));
@@ -1222,6 +1222,7 @@ section:first-child {
 .firstscreen__item {
   position: absolute;
   will-change: transform;
+  width: 100%;
 }
 
 .firstscreen__item_first {
@@ -1413,7 +1414,7 @@ section:first-child {
   background: rgba(239, 242, 252, 0.4) url(../img/home/firstscreen-bg.png) no-repeat bottom center/cover; }
 
 .firstscreen + .tools {
-  background-attachment: fixed;
+  background-attachment: fixed !important;
 }
 
 .tools__row {
