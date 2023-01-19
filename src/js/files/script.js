@@ -5,7 +5,9 @@ import { flsModules } from "./modules.js";
 
 // Выводим высоту шапки
 const header = document.querySelector('header.header');
-window.addEventListener('resize', headerHeight);
+if (!isMobile) {
+   window.addEventListener('resize', headerHeight);
+}
 function headerHeight() {
    let headerHeight = header.offsetHeight;
    document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
@@ -39,7 +41,9 @@ if (services) {
    const servicesItems = document.querySelectorAll('.services .tabs__title');
    const servicesNavigation = document.querySelector('.tabs__navigation');
 
-   window.addEventListener('resize', calcNavigationTitleLineWidth);
+   if (!isMobile) {
+      window.addEventListener('resize', calcNavigationTitleLineWidth);
+   }
    function calcNavigationTitleLineWidth() {
       let navigationWidth = servicesNavigation.offsetWidth;
       let elementWidth = 0;
@@ -75,7 +79,38 @@ function addGsapAnimation() {
          },
       });
    }
-   
+
+   // Анимация при доскролле до секции services
+   const services = document.querySelector('.services');
+   if (services) {
+      const servicesFirstTab = services.querySelector('.tabs__body._hide');
+
+      ScrollTrigger.create({
+         trigger: servicesFirstTab,
+         start: "top 60%",
+         onEnter: function () {
+            servicesFirstTab.classList.remove('_hide');
+         }
+      });
+   }
+
+   const serviceItemsMedia = document.querySelectorAll('.service-item__media svg');
+   if (serviceItemsMedia.length > 0) {
+      serviceItemsMedia.forEach(element => {
+         const elementHideClass = element.closest('._hide');
+
+         if (elementHideClass && !elementHideClass.classList.contains('tabs__body')) {
+            ScrollTrigger.create({
+               trigger: element,
+               start: "top 60%",
+               onEnter: function () {
+                  elementHideClass.classList.remove('_hide');
+               }
+            });
+         }
+      });
+   }
+
    // Секция tools
    const toolsCards = document.querySelectorAll('.tools__card');
    if (toolsCards.length > 0) {
