@@ -1,8 +1,8 @@
 // template12 ====================================================================================================
 .template12 {
    background: url(../img/virtual/template12-bg.png) no-repeat;
-   background-position: center bottom;
-   background-size: cover;
+   background-position: center bottom !important;
+   background-size: cover !important;
    // background-attachment: fixed;
    @include adaptiveValue("padding-top", 80, 40);
    @include adaptiveValue("padding-bottom", 140, 100);

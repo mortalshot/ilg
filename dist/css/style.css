@@ -3696,8 +3696,8 @@ section:first-child {
   background: url(../img/virtual/template12-bg.png) no-repeat; }
 
 .template12 {
-  background-position: center bottom;
-  background-size: cover;
+  background-position: center bottom !important;
+  background-size: cover !important;
   padding-top: clamp( 2.5rem , 1.320754717rem  +  5.0314465409vw , 5rem );
   /* 	// Если поддерживается clamp();
   	@supports (padding-top: $propertyValue) {
