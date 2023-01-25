@@ -18,10 +18,16 @@ h,
       @include adaptiveValue("font-size", 32, 20);
       line-height: math.div(44, 32);
    }
+   &4 {
+      font-family: $fontSecond;
+      @include adaptiveValue("font-size", 24, 18);
+      line-height: math.div(44, 32);
+   }
 }
 
 img,
-video, svg {
+video,
+svg {
    display: block;
    max-width: 100%;
    height: auto;
@@ -34,6 +40,17 @@ section {
 
    &:first-child {
       @include adaptiveValue("padding-top", 50, 16);
+   }
+}
+
+._heading {
+   text-align: center;
+   max-width: rem(852);
+   margin-left: auto;
+   margin-right: auto;
+
+   &:not(:last-child) {
+      @include adaptiveValue("margin-bottom", 64, 48);
    }
 }
 
@@ -56,6 +73,7 @@ section {
    }
 
    p {
+      min-height: 1px;
       margin: rem(16) 0;
    }
 

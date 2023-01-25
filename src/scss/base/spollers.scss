@@ -2,88 +2,84 @@
 // Сниппет (HTML): spoller
 
 // Блок со спойлерами
+
 .spollers {
 	display: grid;
-	gap: 15px;
-}
-// Спойлер
-.spollers__item {
-	font-size: rem(20);
-}
-// Заголовок спойлера
-.spollers__title {
-	width: 100%;
-	cursor: default;
-	text-align: left;
-	border: 1px solid #eee;
-	padding: rem(10) rem(15);
-	border-radius: rem(5);
-	position: relative;
-	._spoller-init & {
-		cursor: pointer;
-		&::before,
-		&::after {
-			content: "";
-			position: absolute;
-			right: 10px;
-			top: 50%;
-			background-color: #000;
-			height: 2px;
-			width: 15px;
-			transition: transform 0.5s ease 0s;
-		}
-		&::before {
-			transform: translate(-75%, -50%) rotate(40deg);
-		}
-		&::after {
-			transform: translate(0, -50%) rotate(-40deg);
-		}
-		&._spoller-active {
-			&::before {
-				transform: translateX(-75%) rotate(-40deg);
-			}
-			&::after {
-				transform: rotate(40deg);
-			}
-		}
-		/*
-		._spoller-init & {
+	@include adaptiveValue("row-gap", 60, 48, 1920, 768, 1);
+	@include adaptiveValue("column-gap", 60, 20, 1920, 768, 1);
+
+	@media (min-width: $mobile) {
+		grid-template-columns: repeat(2, 1fr);
+	}
+
+	// .spollers__item
+	&__item {
+	}
+
+	// .spollers__title
+	&__title {
+		font-family: $fontSecond;
+		font-weight: 700;
+		@include adaptiveValue("font-size", 24, 20);
+		line-height: math.div(36, 24);
+		text-align: left;
+		display: flex;
+
+		span {
 			position: relative;
-			width: 100%;
-			text-align: left;
+			@include adaptiveValue("top", 4, 0, 1920, 768, 1);
+		}
+
+		i {
+			flex: 0 0 rem(48);
+			@include adaptiveValue("flex-basis", 48, 36, 1920, 768, 1);
+			@include adaptiveValue("width", 48, 36, 1920, 768, 1);
+			@include adaptiveValue("height", 48, 36, 1920, 768, 1);
+			background-color: $White;
+			@include adaptiveValue("border-radius", 18, 12);
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			@include adaptiveValue("margin-right", 24, 16, 1920, 768, 1);
+			transition: $transition ease background-color 0s;
+
 			&::before,
 			&::after {
 				content: "";
+				display: block;
+				width: rem(20);
+				height: rem(4);
+				background-color: $Violet;
 				position: absolute;
-				right: 0;
-				top: rem(12);
-				height: rem(1);
-				transition: all 0.3s ease 0s;
-				width: rem(10);
-				background-color: #000;
+				border-radius: rem(10);
+				transition: $transition ease all 0s;
 			}
 			&::before {
-				transform: rotate(40deg);
-				right: rem(7);
-			}
-			&::after {
-				transform: rotate(-40deg);
+				transform: rotate(90deg);
 			}
 		}
+
 		&._spoller-active {
-			&::before {
-				transform: rotate(-40deg);
-			}
-			&::after {
-				transform: rotate(40deg);
+			i {
+				background: linear-gradient(270deg, #f8ba55 0%, #fb7354 100%);
+
+				&::before,
+				&::after {
+					background-color: $White;
+				}
+
+				&::before {
+					transform: rotate(0deg);
+					opacity: 0;
+				}
 			}
 		}
-		*/
 	}
-}
-// Контент спойлера
-.spollers__body {
-	padding: rem(20);
-	border-radius: rem(5);
-	border: 1px solid #eee;
+
+	// .spollers__body
+	&__body {
+		@include adaptiveValue("padding-top", 24, 16, 1920, 768, 1);
+		@include adaptiveValue("padding-left", 72, 52, 1920, 768, 1);
+	}
 }
