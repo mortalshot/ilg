@@ -1,4 +1,5 @@
 .swiper {
+	position: relative;
 	overflow: hidden;
 }
 .swiper-wrapper {
@@ -32,4 +33,76 @@
 }
 .swiper-button-lock {
 	display: none !important;
+}
+
+.swiper-pagination-progressbar {
+	background: #e8f0ff;
+	position: absolute;
+}
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	background: #31225c;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: scale(0);
+	transform-origin: left top;
+	// transition-duration: 400ms !important
+}
+.swiper-rtl .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+	transform-origin: right top;
+}
+.swiper-horizontal > .swiper-pagination-progressbar,
+.swiper-pagination-progressbar.swiper-pagination-horizontal,
+.swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite,
+.swiper-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+	width: 100%;
+	height: 4px;
+	left: 0;
+	bottom: 40px;
+}
+.swiper-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite,
+.swiper-pagination-progressbar.swiper-pagination-horizontal.swiper-pagination-progressbar-opposite,
+.swiper-pagination-progressbar.swiper-pagination-vertical,
+.swiper-vertical > .swiper-pagination-progressbar {
+	width: 4px;
+	height: 100%;
+	left: 0;
+	bottom: 40px;
+}
+.swiper-scrollbar {
+	border-radius: 10px;
+	position: relative;
+	-ms-touch-action: none;
+}
+.swiper-horizontal > .swiper-scrollbar {
+	position: absolute;
+	left: 0;
+	bottom: 40px;
+	z-index: 50;
+	height: 5px;
+	width: 100%;
+}
+.swiper-vertical > .swiper-scrollbar {
+	position: absolute;
+	right: 3px;
+	top: 1%;
+	z-index: 50;
+	width: 5px;
+	height: 98%;
+}
+.swiper-scrollbar-drag {
+	height: 48px;
+	width: 100%;
+	border-radius: 18px;
+	position: relative;
+	background: #7a43ee;
+	left: 0;
+	bottom: 24px;
+}
+.swiper-scrollbar-cursor-drag {
+	cursor: move;
+}
+.swiper-scrollbar-lock {
+	display: none;
 }

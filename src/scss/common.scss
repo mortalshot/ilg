@@ -44,11 +44,6 @@ section {
 }
 
 ._heading {
-   text-align: center;
-   max-width: rem(852);
-   margin-left: auto;
-   margin-right: auto;
-
    &:not(:last-child) {
       @include adaptiveValue("margin-bottom", 64, 48);
    }
@@ -279,6 +274,29 @@ section {
 
       // .swiper__arrow_right
       &_right {
+      }
+   }
+
+   // .swiper-scrollbar-drag
+   &-scrollbar-drag {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: rem(6);
+      cursor: pointer;
+      min-width: rem(100);
+
+      &::before,
+      &::after {
+         content: "\e906";
+         @extend %ic;
+         font-size: rem(24);
+         color: $White;
+         pointer-events: none;
+      }
+
+      &::before {
+         transform: rotate(-180deg);
       }
    }
 }

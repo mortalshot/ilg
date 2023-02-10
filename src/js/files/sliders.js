@@ -7,7 +7,7 @@
 // Подключаем слайдер Swiper из node_modules
 // При необходимости подключаем дополнительные модули слайдера, указывая их в {} через запятую
 // Пример: { Navigation, Autoplay }
-import Swiper, { Navigation } from 'swiper';
+import Swiper, { Navigation, Pagination, Scrollbar, FreeMode } from 'swiper';
 /*
 Основниые модули слайдера:
 Navigation, Pagination, Autoplay, 
@@ -27,9 +27,9 @@ import "../../scss/base/swiper.scss";
 function initSliders() {
 	// Перечень слайдеров
 	// Проверяем, есть ли слайдер на стронице
-	if (document.querySelector('.swiper')) { // Указываем скласс нужного слайдера
+	if (document.querySelector('.clients__slider')) { // Указываем скласс нужного слайдера
 		// Создаем слайдер
-		new Swiper('.swiper', { // Указываем скласс нужного слайдера
+		new Swiper('.clients__slider', { // Указываем скласс нужного слайдера
 			// Подключаем модули слайдера
 			// для конкретного случая
 			modules: [Navigation],
@@ -86,6 +86,66 @@ function initSliders() {
 				},
 				992: {
 					slidesPerView: 2,
+					spaceBetween: 60,
+				},
+			},
+
+			// События
+			on: {
+
+			}
+		});
+	}
+
+	if (document.querySelector('.template18__slider')) { // Указываем скласс нужного слайдера
+		// Создаем слайдер
+		new Swiper('.template18__slider', {
+			modules: [Pagination, Scrollbar, FreeMode],
+			observer: true,
+			observeParents: true,
+			slidesPerView: 1,
+			spaceBetween: 20,
+			autoHeight: false,
+			speed: 500,
+
+			freeMode: {
+				enabled: true,
+				sticky: true,
+				momentum: false,
+			},
+
+			pagination: {
+				el: '.template18__slider .swiper-pagination',
+				type: 'progressbar',
+			},
+
+			scrollbar: {
+				el: '.template18__slider .swiper-scrollbar',
+				draggable: true,
+				dragSize: 146
+			},
+
+			// Брейкпоинты
+
+			breakpoints: {
+				575: {
+					slidesPerView: 2,
+					spaceBetween: 10,
+				},
+				768: {
+					slidesPerView: 2,
+					spaceBetween: 20,
+				},
+				992: {
+					slidesPerView: 3,
+					spaceBetween: 20,
+				},
+				1280: {
+					slidesPerView: 3,
+					spaceBetween: 40,
+				},
+				1440: {
+					slidesPerView: 3,
 					spaceBetween: 60,
 				},
 			},
