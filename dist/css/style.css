@@ -1432,6 +1432,12 @@ section:first-child {
 }
 
 .payments__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0.75rem;
   padding: clamp( 0.5rem , -0.25rem  +  0.8333333333vw , 0.75rem );
   /* 	// Если поддерживается clamp();
@@ -1444,19 +1450,6 @@ section:first-child {
   	} */
   border-radius: 1.125rem;
   background-color: #7a43ee;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0;
-          flex: 0 0;
-  -ms-flex-preferred-size: clamp( 2.25rem , 2.067961165rem  +  0.7766990291vw , 3rem );
-      flex-basis: clamp( 2.25rem , 2.067961165rem  +  0.7766990291vw , 3rem );
-  /* 	// Если поддерживается clamp();
-  	@supports (flex-basis: $propertyValue) {
-  		flex-basis: $propertyValue;
-  	}
-  	// Если не поддерживается clamp();
-  	@supports not (flex-basis: $propertyValue) {
-  		flex-basis: calc(2.25rem + 0.75 * (100vw - 23.4375rem) / 96.5625);
-  	} */
 }
 
 .bottom-footer {
@@ -4314,15 +4307,7 @@ section:first-child {
 }
 
 .template18__note:not(:first-child) {
-  margin-top: clamp( 4rem , 4rem  +  0vw , 4rem );
-  /* 	// Если поддерживается clamp();
-  	@supports (margin-top: $propertyValue) {
-  		margin-top: $propertyValue;
-  	}
-  	// Если не поддерживается clamp();
-  	@supports not (margin-top: $propertyValue) {
-  		margin-top: calc(4rem + 0 * (100vw - 23.4375rem) / 49.6875);
-  	} */
+  margin-top: 4rem;
 }
 
 .template18-item {

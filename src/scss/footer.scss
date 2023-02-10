@@ -95,12 +95,14 @@
 
    // .payments__item
    &__item {
+      display: flex;
+      justify-content: center;
       padding: rem(12);
       @include adaptiveValue("padding", 12, 8, 1920, 1440, 1);
       border-radius: rem(18);
       background-color: $Violet;
-      flex: 0 0;
-      @include adaptiveValue("flex-basis", 48, 36, 1920, 375, 1);
+      // flex: 0 0 rem(40);
+      // @include adaptiveValue("flex-basis", 48, 36, 1920, 375, 1);
    }
 }
 

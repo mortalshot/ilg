@@ -2372,7 +2372,7 @@ body {
 		margin-right: auto;
 
 		&:not(:first-child) {
-			@include adaptiveValue("margin-top", 64, 64);
+			margin-top: rem(64);
 		}
 	}
 }
