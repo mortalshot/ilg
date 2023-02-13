@@ -83,6 +83,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	overflow: clip;
+	background-color: #e8f0ff;
 
 	// Прижимаем footer
 	> main {
@@ -586,6 +587,31 @@ body {
 
 	._hide & {
 		opacity: 0;
+	}
+}
+._scale-0 {
+	._hide & {
+		transform: translate(0, 100%) scaleY(0);
+	}
+}
+._from-top {
+	._hide & {
+		transform: translateY(-10%);
+	}
+}
+._from-bottom {
+	._hide & {
+		transform: translateY(10%);
+	}
+}
+._from-left {
+	._hide & {
+		transform: translateX(-10%);
+	}
+}
+._from-right {
+	._hide & {
+		transform: translateX(-10%);
 	}
 }
 
@@ -1236,7 +1262,7 @@ body {
 		}
 	}
 }
-// feature item-1
+// features-item-1
 #earth {
 	transition: $transition ease opacity 0s, $transition transform 0s;
 
@@ -1273,7 +1299,7 @@ body {
 	}
 }
 
-// feature item-2
+// features-item-2
 #earth-2 {
 	transition: $transition ease opacity 0s, $transition transform 0s;
 
@@ -1317,7 +1343,7 @@ body {
 	}
 }
 
-// feature item-3
+// features-item-3
 #service-item-14-1 {
 	._hide & {
 		transform: translateX(10%);
@@ -1334,7 +1360,7 @@ body {
 	}
 }
 
-// feature item-4
+// features-item-4
 #service-item-15-1 {
 	._hide & {
 		transform: translateX(10%);
@@ -1356,7 +1382,7 @@ body {
 	}
 }
 
-// feature-6-item-1
+// features-6-item-1
 @for $i from 1 through 6 {
 	#features-6-item-1-#{$i} {
 		._hide & {
@@ -1365,7 +1391,7 @@ body {
 	}
 }
 
-// feature-7-item-1-1
+// features-7-item-1
 #features-7-item-1-1,
 #features-7-item-1-3 {
 	._hide & {
@@ -1378,7 +1404,7 @@ body {
 		transform: translateX(10%);
 	}
 }
-// feature-7-item-3-1
+// features-7-item-3
 #features-7-item-3-1 {
 	._hide & {
 		transform: translateX(-10%);
@@ -1390,7 +1416,22 @@ body {
 		transform: translateX(10%);
 	}
 }
-
+// feature-8-item-1
+#features-8-item-1-1 {
+	._hide & {
+		transform: translateX(-10%);
+	}
+}
+#features-8-item-1-2 {
+	._hide & {
+		transform: translateX(10%);
+	}
+}
+#features-8-item-1-3 {
+	._hide & {
+		transform: translateY(-10%);
+	}
+}
 // geography ====================================================================================================
 .geography {
 	// .geography__container
@@ -2193,12 +2234,30 @@ body {
 
 // template15 ====================================================================================================
 .template15 {
-	background: url(../img/order/template15-1-bg.png) no-repeat;
-	background-position: left bottom !important;
-	background-size: cover !important;
+	// background: url(../img/order/template15-1-bg.png) no-repeat;
+	// background-position: left bottom !important;
+	// background-size: cover !important;
 	@include adaptiveValue("padding-top", 80, 40);
 	@include adaptiveValue("padding-bottom", 160, 100);
 	overflow: hidden;
+	position: relative;
+
+	&:first-child {
+		@include adaptiveValue("padding-top", 160, 80);
+	}
+
+	// .template15__bg
+	&__bg {
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: left bottom;
+		}
+	}
 
 	// .template15__container
 	&__container {
@@ -2207,6 +2266,8 @@ body {
 		grid-template-columns: percent(580, 1280) percent(580, 1280);
 		justify-content: space-between;
 		@include adaptiveValue("gap", 60, 40, 1920, 992, 1);
+		position: relative;
+		z-index: 1;
 
 		@media (max-width: $mobile) {
 			grid-template-columns: 60% 1fr;
@@ -2228,18 +2289,26 @@ body {
 	&__media {
 		position: relative;
 
-		@media (max-width:$mobileM){
-			 max-width: rem(320); 
+		@media (max-width: $mobileM) {
+			max-width: rem(320);
 		}
 	}
 
 	// .template15__icon
 	&__icon {
-		position: relative;
-		z-index: 1;
+		// position: relative;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
 
 		div {
 			position: absolute;
+		}
+
+		img {
+			position: relative;
 		}
 	}
 
@@ -2443,5 +2512,53 @@ body {
 	// .template19__text
 	&__text {
 		text-align: center;
+	}
+}
+
+// template20 ====================================================================================================
+.template20 {
+	// .template20__container
+	&__container {
+	}
+
+	// .template20__wrapper
+	&__wrapper {
+		@include adaptiveValue("padding", 100, 36);
+		border-radius: rem(48);
+		position: relative;
+	}
+
+	// .template20__text
+	&__text {
+		width: 100%;
+		position: relative;
+		z-index: 2;
+
+		@media (min-width: $mobileM) {
+			max-width: percent(640, 940);
+		}
+	}
+
+	// .template20__items
+	&__items {
+		pointer-events: none;
+
+		@media (max-width: $mobileM) {
+			// display: none;
+		}
+	}
+
+	// .template20__item
+	&__item {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+
+		& > div {
+			position: absolute;
+			z-index: 1;
+		}
 	}
 }
