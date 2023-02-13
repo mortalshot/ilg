@@ -4,6 +4,7 @@
 	@include adaptiveValue("padding-bottom", 18, 12);
 	position: sticky;
 	top: 0;
+	background-color: $White;
 	z-index: 50;
 	will-change: transform;
 	transition: 0.5s ease transform, 0.5s background-color 0s;
@@ -12,7 +13,6 @@
 		transform: translateY(-100%);
 	}
 	&._header-show {
-		background-color: $White;
 		transform: translateY(0);
 	}
 
