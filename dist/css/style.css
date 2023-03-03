@@ -1449,6 +1449,10 @@ section:first-child {
   	} */
   border-radius: 1.125rem;
   background-color: #e8f0ff;
+  /* @media (min-width: $tablet) and (max-width: 1440px) {
+  	flex: 1;
+  	justify-content: flex-end;
+  } */
 }
 
 .header__menu .current-menu-item a {
@@ -2193,9 +2197,9 @@ section:first-child {
 }
 
 ._hide ._from-right {
-  -webkit-transform: translateX(-10%);
-      -ms-transform: translateX(-10%);
-          transform: translateX(-10%);
+  -webkit-transform: translateX(10%);
+      -ms-transform: translateX(10%);
+          transform: translateX(10%);
 }
 
 .service-item {
@@ -2987,6 +2991,18 @@ section:first-child {
 .services_reverse .service-item__count {
   top: 0;
   bottom: initial;
+}
+
+.features:first-child {
+  padding-top: clamp( 4rem , 2.3490566038rem  +  7.0440251572vw , 7.5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(4rem + 3.5 * (100vw - 23.4375rem) / 49.6875);
+  	} */
 }
 
 .features__container {
@@ -4534,6 +4550,12 @@ section:first-child {
   color: #fff;
 }
 
+.template16_reverse .template16__accent {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
 .steps__items {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4846,6 +4868,494 @@ section:first-child {
   z-index: 1;
 }
 
+.template21__heading {
+  text-align: center;
+}
+
+.template21__items {
+  display: -ms-grid;
+  display: grid;
+  padding-top: clamp( 3.125rem , 1.6509433962rem  +  6.2893081761vw , 6.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(3.125rem + 3.125 * (100vw - 23.4375rem) / 49.6875);
+  	} */
+  padding-left: 1.25rem;
+  row-gap: 5.625rem;
+}
+
+.template21-item {
+  position: relative;
+}
+
+.template21-item__step {
+  font-weight: 700;
+  font-size: clamp( 7.125rem , 5.0408921933rem  +  5.7992565056vw , 12rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (font-size: $propertyValue) {
+  		font-size: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (font-size: $propertyValue) {
+  		font-size: calc(7.125rem + 4.875 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  line-height: 1;
+  color: #cdd8f7;
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: translate(-1.25rem, -55%);
+      -ms-transform: translate(-1.25rem, -55%);
+          transform: translate(-1.25rem, -55%);
+}
+
+.template21-item__text {
+  position: relative;
+}
+
+.template22__row {
+  display: -ms-grid;
+  display: grid;
+  gap: clamp( 1.5rem , 0.5381040892rem  +  2.6765799257vw , 3.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (gap: $propertyValue) {
+  		gap: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (gap: $propertyValue) {
+  		gap: calc(1.5rem + 2.25 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+}
+
+.item-template22 {
+  height: 100%;
+}
+
+.item-template22_second {
+  height: 100%;
+}
+
+.item-template22_second .card-template8__body {
+  padding-top: clamp( 1.25rem , 0.1812267658rem  +  2.9739776952vw , 3.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(1.25rem + 2.5 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  padding-bottom: clamp( 1.25rem , 0.1812267658rem  +  2.9739776952vw , 3.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(1.25rem + 2.5 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  padding-left: clamp( 1rem , 0.1449814126rem  +  2.3791821561vw , 3rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-left: $propertyValue) {
+  		padding-left: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-left: $propertyValue) {
+  		padding-left: calc(1rem + 2 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  padding-right: clamp( 1rem , 0.1449814126rem  +  2.3791821561vw , 3rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-right: $propertyValue) {
+  		padding-right: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-right: $propertyValue) {
+  		padding-right: calc(1rem + 2 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+}
+
+.item-template22_third {
+  display: -ms-grid;
+  display: grid;
+  gap: clamp( 1.5rem , 0.5381040892rem  +  2.6765799257vw , 3.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (gap: $propertyValue) {
+  		gap: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (gap: $propertyValue) {
+  		gap: calc(1.5rem + 2.25 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  height: 100%;
+}
+
+.item-template22_third .item-template22__text {
+  padding-top: clamp( 1.25rem , 0.1812267658rem  +  2.9739776952vw , 3.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(1.25rem + 2.5 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  padding-bottom: clamp( 1.25rem , 0.1812267658rem  +  2.9739776952vw , 3.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(1.25rem + 2.5 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  padding-left: clamp( 1rem , 0.1449814126rem  +  2.3791821561vw , 3rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-left: $propertyValue) {
+  		padding-left: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-left: $propertyValue) {
+  		padding-left: calc(1rem + 2 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  padding-right: clamp( 1rem , 0.1449814126rem  +  2.3791821561vw , 3rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-right: $propertyValue) {
+  		padding-right: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-right: $propertyValue) {
+  		padding-right: calc(1rem + 2 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  border-radius: clamp( 1.25rem , 0.5018587361rem  +  2.0817843866vw , 3rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (border-radius: $propertyValue) {
+  		border-radius: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (border-radius: $propertyValue) {
+  		border-radius: calc(1.25rem + 1.75 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-template22_fourth .item-template22__wrapper {
+  background-color: #fff;
+  display: -ms-grid;
+  display: grid;
+  overflow: hidden;
+  border-radius: clamp( 1.25rem , 0.5018587361rem  +  2.0817843866vw , 3rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (border-radius: $propertyValue) {
+  		border-radius: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (border-radius: $propertyValue) {
+  		border-radius: calc(1.25rem + 1.75 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  height: 100%;
+}
+
+.item-template22_fourth .item-template22__text {
+  padding-top: clamp( 1.25rem , 0.1812267658rem  +  2.9739776952vw , 3.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(1.25rem + 2.5 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  padding-bottom: clamp( 1.25rem , 0.1812267658rem  +  2.9739776952vw , 3.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(1.25rem + 2.5 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  padding-left: clamp( 1rem , 0.1449814126rem  +  2.3791821561vw , 3rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-left: $propertyValue) {
+  		padding-left: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-left: $propertyValue) {
+  		padding-left: calc(1rem + 2 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  padding-right: clamp( 1rem , 0.1449814126rem  +  2.3791821561vw , 3rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-right: $propertyValue) {
+  		padding-right: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-right: $propertyValue) {
+  		padding-right: calc(1rem + 2 * (100vw - 35.9375rem) / 84.0625);
+  	} */
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.item-template22_fourth .item-template22__image {
+  position: relative;
+  padding-bottom: 100%;
+}
+
+.item-template22_fourth .item-template22__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.template23__row {
+  display: -ms-grid;
+  display: grid;
+  gap: clamp( 1.25rem , -0.4166666667rem  +  3.4722222222vw , 3.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (gap: $propertyValue) {
+  		gap: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (gap: $propertyValue) {
+  		gap: calc(1.25rem + 2.5 * (100vw - 48rem) / 72);
+  	} */
+}
+
+.template23__row:not(:last-child) {
+  margin-bottom: clamp( 3rem , 2.5283018868rem  +  2.0125786164vw , 4rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-bottom: $propertyValue) {
+  		margin-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-bottom: $propertyValue) {
+  		margin-bottom: calc(3rem + 1 * (100vw - 23.4375rem) / 49.6875);
+  	} */
+}
+
+.template23__items {
+  display: -ms-grid;
+  display: grid;
+  row-gap: clamp( 2.5rem , 1.6666666667rem  +  1.7361111111vw , 3.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (row-gap: $propertyValue) {
+  		row-gap: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (row-gap: $propertyValue) {
+  		row-gap: calc(2.5rem + 1.25 * (100vw - 48rem) / 72);
+  	} */
+  -webkit-column-gap: clamp( 1.25rem , -0.4166666667rem  +  3.4722222222vw , 3.75rem );
+     -moz-column-gap: clamp( 1.25rem , -0.4166666667rem  +  3.4722222222vw , 3.75rem );
+          column-gap: clamp( 1.25rem , -0.4166666667rem  +  3.4722222222vw , 3.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (column-gap: $propertyValue) {
+  		column-gap: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (column-gap: $propertyValue) {
+  		column-gap: calc(1.25rem + 2.5 * (100vw - 48rem) / 72);
+  	} */
+}
+
+.template23-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 2.25rem;
+}
+
+.template23-item__icon {
+  position: relative;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 4.5rem;
+          flex: 0 0 4.5rem;
+  max-width: 4.5rem;
+  padding-bottom: 4.5rem;
+}
+
+.template23-item__icon img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.template24__wrapper {
+  border-radius: 3rem;
+  padding-top: clamp( 3.75rem , 2.6886792453rem  +  4.5283018868vw , 6rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(3.75rem + 2.25 * (100vw - 23.4375rem) / 49.6875);
+  	} */
+  padding-bottom: clamp( 3.75rem , 2.6886792453rem  +  4.5283018868vw , 6rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(3.75rem + 2.25 * (100vw - 23.4375rem) / 49.6875);
+  	} */
+  padding-left: clamp( 2.25rem , 0.3632075472rem  +  8.0503144654vw , 6.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-left: $propertyValue) {
+  		padding-left: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-left: $propertyValue) {
+  		padding-left: calc(2.25rem + 4 * (100vw - 23.4375rem) / 49.6875);
+  	} */
+  padding-right: clamp( 2.25rem , 0.3632075472rem  +  8.0503144654vw , 6.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-right: $propertyValue) {
+  		padding-right: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-right: $propertyValue) {
+  		padding-right: calc(2.25rem + 4 * (100vw - 23.4375rem) / 49.6875);
+  	} */
+  position: relative;
+}
+
+.template24__wrapper::before {
+  content: "";
+  display: block;
+  width: clamp( 8.3125rem , 5.6886792453rem  +  11.1949685535vw , 13.875rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (width: $propertyValue) {
+  		width: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (width: $propertyValue) {
+  		width: calc(8.3125rem + 5.5625 * (100vw - 23.4375rem) / 49.6875);
+  	} */
+  height: clamp( 4.875rem , 3.3419811321rem  +  6.5408805031vw , 8.125rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (height: $propertyValue) {
+  		height: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (height: $propertyValue) {
+  		height: calc(4.875rem + 3.25 * (100vw - 23.4375rem) / 49.6875);
+  	} */
+  background: url(../img/dropshipping/template24-1.svg) no-repeat center/contain;
+  position: absolute;
+  right: 28.4210526316%;
+  top: 0;
+  -webkit-transform: translateY(-42.3076923077%);
+      -ms-transform: translateY(-42.3076923077%);
+          transform: translateY(-42.3076923077%);
+}
+
+.template24__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: clamp( -2.875rem , 0.875rem  +  -3.125vw , -0.625rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-left: $propertyValue) {
+  		margin-left: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-left: $propertyValue) {
+  		margin-left: calc(-0.625rem + -2.25 * (100vw - 48rem) / 72);
+  	} */
+  margin-right: clamp( -2.875rem , 0.875rem  +  -3.125vw , -0.625rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-right: $propertyValue) {
+  		margin-right: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-right: $propertyValue) {
+  		margin-right: calc(-0.625rem + -2.25 * (100vw - 48rem) / 72);
+  	} */
+  margin-top: clamp( -2rem , -0.75rem  +  -1.0416666667vw , -1.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-top: $propertyValue) {
+  		margin-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-top: $propertyValue) {
+  		margin-top: calc(-1.25rem + -0.75 * (100vw - 48rem) / 72);
+  	} */
+  margin-bottom: clamp( -2rem , -0.75rem  +  -1.0416666667vw , -1.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (margin-bottom: $propertyValue) {
+  		margin-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (margin-bottom: $propertyValue) {
+  		margin-bottom: calc(-1.25rem + -0.75 * (100vw - 48rem) / 72);
+  	} */
+}
+
+.template24__column {
+  padding-top: clamp( 1.25rem , 0.75rem  +  1.0416666667vw , 2rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(1.25rem + 0.75 * (100vw - 48rem) / 72);
+  	} */
+  padding-bottom: clamp( 1.25rem , 0.75rem  +  1.0416666667vw , 2rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(1.25rem + 0.75 * (100vw - 48rem) / 72);
+  	} */
+  padding-left: clamp( 0.625rem , -0.875rem  +  3.125vw , 2.875rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-left: $propertyValue) {
+  		padding-left: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-left: $propertyValue) {
+  		padding-left: calc(0.625rem + 2.25 * (100vw - 48rem) / 72);
+  	} */
+  padding-right: clamp( 0.625rem , -0.875rem  +  3.125vw , 2.875rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-right: $propertyValue) {
+  		padding-right: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-right: $propertyValue) {
+  		padding-right: calc(0.625rem + 2.25 * (100vw - 48rem) / 72);
+  	} */
+}
+
 .swiper {
   position: relative;
   overflow: hidden;
@@ -5007,6 +5517,59 @@ section:first-child {
     -o-object-fit: cover;
        object-fit: cover;
   }
+
+  .template22__row {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .item-template22_fourth .item-template22__wrapper {
+    -ms-grid-columns: 1fr 22.972972973%;
+    grid-template-columns: 1fr 22.972972973%;
+  }
+
+  .template23-item {
+    gap: clamp( 1rem , 0.1666666667rem  +  1.7361111111vw , 2.25rem );
+    /* 	// Если поддерживается clamp();
+    	@supports (gap: $propertyValue) {
+    		gap: $propertyValue;
+    	}
+    	// Если не поддерживается clamp();
+    	@supports not (gap: $propertyValue) {
+    		gap: calc(1rem + 1.25 * (100vw - 48rem) / 72);
+    	} */
+  }
+
+  .template23-item__icon {
+    max-width: clamp( 3.5rem , 2.8333333333rem  +  1.3888888889vw , 4.5rem );
+    /* 	// Если поддерживается clamp();
+    	@supports (max-width: $propertyValue) {
+    		max-width: $propertyValue;
+    	}
+    	// Если не поддерживается clamp();
+    	@supports not (max-width: $propertyValue) {
+    		max-width: calc(3.5rem + 1 * (100vw - 48rem) / 72);
+    	} */
+    padding-bottom: clamp( 3.5rem , 2.8333333333rem  +  1.3888888889vw , 4.5rem );
+    /* 	// Если поддерживается clamp();
+    	@supports (padding-bottom: $propertyValue) {
+    		padding-bottom: $propertyValue;
+    	}
+    	// Если не поддерживается clamp();
+    	@supports not (padding-bottom: $propertyValue) {
+    		padding-bottom: calc(3.5rem + 1 * (100vw - 48rem) / 72);
+    	} */
+    -ms-flex-preferred-size: clamp( 3.5rem , 2.8333333333rem  +  1.3888888889vw , 4.5rem );
+        flex-basis: clamp( 3.5rem , 2.8333333333rem  +  1.3888888889vw , 4.5rem );
+    /* 	// Если поддерживается clamp();
+    	@supports (flex-basis: $propertyValue) {
+    		flex-basis: $propertyValue;
+    	}
+    	// Если не поддерживается clamp();
+    	@supports not (flex-basis: $propertyValue) {
+    		flex-basis: calc(3.5rem + 1 * (100vw - 48rem) / 72);
+    	} */
+  }
 }
 
 @media screen and (min-width: 35.93625em) {
@@ -5120,6 +5683,87 @@ section:first-child {
 
   .template20__text {
     max-width: 68.085106383%;
+  }
+
+  .template21__items {
+    padding-left: clamp( 2.5rem , 0.8968401487rem  +  4.4609665428vw , 6.25rem );
+    /* 	// Если поддерживается clamp();
+    	@supports (padding-left: $propertyValue) {
+    		padding-left: $propertyValue;
+    	}
+    	// Если не поддерживается clamp();
+    	@supports not (padding-left: $propertyValue) {
+    		padding-left: calc(2.5rem + 3.75 * (100vw - 35.9375rem) / 84.0625);
+    	} */
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: clamp( 7.5rem , 6.4312267658rem  +  2.9739776952vw , 10rem );
+    /* 	// Если поддерживается clamp();
+    	@supports (row-gap: $propertyValue) {
+    		row-gap: $propertyValue;
+    	}
+    	// Если не поддерживается clamp();
+    	@supports not (row-gap: $propertyValue) {
+    		row-gap: calc(7.5rem + 2.5 * (100vw - 35.9375rem) / 84.0625);
+    	} */
+    -webkit-column-gap: clamp( 4.375rem , 1.970260223rem  +  6.6914498141vw , 10rem );
+       -moz-column-gap: clamp( 4.375rem , 1.970260223rem  +  6.6914498141vw , 10rem );
+            column-gap: clamp( 4.375rem , 1.970260223rem  +  6.6914498141vw , 10rem );
+    /* 	// Если поддерживается clamp();
+    	@supports (column-gap: $propertyValue) {
+    		column-gap: $propertyValue;
+    	}
+    	// Если не поддерживается clamp();
+    	@supports not (column-gap: $propertyValue) {
+    		column-gap: calc(4.375rem + 5.625 * (100vw - 35.9375rem) / 84.0625);
+    	} */
+  }
+
+  .template21-item__step {
+    -webkit-transform: translate(-36.3636363636%, -57.6923076923%);
+        -ms-transform: translate(-36.3636363636%, -57.6923076923%);
+            transform: translate(-36.3636363636%, -57.6923076923%);
+  }
+
+  .template22__row {
+    -ms-grid-columns: (1fr)[3];
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .template22__block:nth-child(1) {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    grid-row: 1/3;
+  }
+
+  .template22__block:nth-child(4) {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+  }
+
+  .template22__block:nth-child(5) {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  .template22__block:nth-child(6) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 2;
+    grid-row: 2/4;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+
+  .template23__row {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .template23__items {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -5313,7 +5957,7 @@ section:first-child {
     grid-row: 1/2;
   }
 
-  .features_reverse .features__item {
+  .features_reverse .features__item .service-item {
     -ms-grid-columns: 1fr 37.984496124%;
     grid-template-columns: 1fr 37.984496124%;
   }
@@ -5324,7 +5968,7 @@ section:first-child {
     grid-row: 1/2;
   }
 
-  .features_reverse .features__item:nth-child(2n) {
+  .features_reverse .features__item:nth-child(2n) .service-item {
     -ms-grid-columns: 37.984496124% 1fr;
     grid-template-columns: 37.984496124% 1fr;
   }
@@ -5375,6 +6019,18 @@ section:first-child {
 
   .rates__price {
     text-align: left;
+  }
+
+  .item-template22_first {
+    padding-top: clamp( 0.0000000625rem , -1.442843777rem  +  4.0148698141vw , 3.375rem );
+    /* 	// Если поддерживается clamp();
+    	@supports (padding-top: $propertyValue) {
+    		padding-top: $propertyValue;
+    	}
+    	// Если не поддерживается clamp();
+    	@supports not (padding-top: $propertyValue) {
+    		padding-top: calc(0.0000000625rem + 3.3749999375 * (100vw - 35.9375rem) / 84.0625);
+    	} */
   }
 }
 
@@ -5920,16 +6576,12 @@ section:first-child {
        -moz-column-gap: 0.625rem;
             column-gap: 0.625rem;
   }
-}
 
-@media (min-width: 61.99875em) and (max-width: 1440px) {
-  .header__menu {
-    -webkit-box-flex: 1;
-        -ms-flex: 1;
-            flex: 1;
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
+  .item-template22_fourth .item-template22__image {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    padding-bottom: 70.5882352941%;
   }
 }
 
@@ -5938,6 +6590,31 @@ section:first-child {
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
+  }
+}
+
+@media (min-width: 29.99875em) and (max-width: 35.93625em) {
+  .template22__block:nth-child(4) {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
+  }
+
+  .template22__block:nth-child(5) {
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
+  }
+
+  .template22__block:nth-child(6) {
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    grid-row: 3/4;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
   }
 }
 
