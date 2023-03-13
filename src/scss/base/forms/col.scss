@@ -1,4 +1,6 @@
 .form__row {
+   display: flex;
+   flex-wrap: wrap;
    margin-left: rem(-8);
    margin-right: rem(-8);
 }

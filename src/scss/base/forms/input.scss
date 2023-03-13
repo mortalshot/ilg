@@ -8,18 +8,59 @@ textarea {
 	-moz-appearance: none;
 	appearance: none;
 }
-.input {
-	border-radius: 0 !important;
+.form__input {
 	width: 100%;
-	display: block;
-	padding: 0px 20px;
-	border: 1px solid #eee;
-	&._form-focus {
+	height: rem(60);
+	background-color: #e8f0ff;
+	border-radius: 18px;
+	padding: rem(14) rem(24);
+	outline: 0;
+	font-weight: 400;
+	font-size: rem(20);
+	line-height: math.div(32, 20);
+
+	&::placeholder {
+		color: #929bb1;
+		transition: $transition ease opacity 0s;
 	}
-	&._form-error {
+
+	&:focus {
+		&::placeholder {
+			opacity: 0;
+		}
 	}
 }
-textarea.input {
+
+textarea.form__input {
 	resize: none;
-	padding: 0px 0px;
+	height: auto;
+	padding: rem(14) rem(24);
+}
+
+.password {
+	// .password__input
+	&__input {
+	}
+
+	// .password__reset
+	&__reset {
+		display: inline-block;
+		margin: rem(16) rem(24) 0;
+		font-weight: 600;
+		font-size: rem(18);
+		line-height: math.div(23, 18);
+	}
+
+	a.password__reset:link,
+	a.password__reset:visited {
+		text-decoration: underline from-font;
+		text-underline-offset: 4px;
+		transition: $transition ease text-decoration 0s;
+
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline transparent from-font;
+			}
+		}
+	}
 }

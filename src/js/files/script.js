@@ -62,6 +62,18 @@ if (services) {
    }, 300);
 }
 
+// Сдвигаем template25 под шапку, если эта секция первая на странице
+const firstsreenMarginTop = document.querySelector('._firstscreen:first-child');
+
+if (firstsreenMarginTop) {
+   window.addEventListener('DOMContentLoaded', changeFirstsreenMarginTop);
+   window.addEventListener('resize', changeFirstsreenMarginTop);
+}
+function changeFirstsreenMarginTop() {
+   firstsreenMarginTop.style.marginTop = -header.offsetHeight + 'px';
+   ScrollTrigger.refresh();
+}
+
 // gsap Анимации
 function addGsapAnimation() {
    // Первый экран

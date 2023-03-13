@@ -4,13 +4,14 @@
 	@include adaptiveValue("padding-bottom", 18, 12);
 	position: sticky;
 	top: 0;
-	background-color: $White;
+	// background-color: $White;
 	z-index: 50;
 	will-change: transform;
 	transition: 0.5s ease transform, 0.5s background-color 0s;
 
 	&._header-scroll {
 		transform: translateY(-100%);
+		background-color: $White !important;
 	}
 	&._header-show {
 		transform: translateY(0);
@@ -58,7 +59,7 @@
 				opacity: 0;
 				visibility: hidden;
 				pointer-events: none;
-				transition: 0.5s ease all 0s;
+				transition: 0.5s ease opacity, 0.5s visibility 0s;
 				overflow-y: auto;
 				overflow-x: hidden;
 				background-color: #e8f0ff;
@@ -130,6 +131,11 @@
 			}
 		}
 	}
+
+	// .header_transparent
+	&.header_transparent {
+		background-color: transparent;
+	}
 }
 
 .logo {
@@ -198,6 +204,10 @@
 			&:hover {
 				text-decoration: underline from-font;
 			}
+		}
+
+		&.btn {
+			text-decoration: none !important;
 		}
 	}
 }

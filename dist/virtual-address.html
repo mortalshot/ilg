@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<!-- <style>body{opacity: 0;}</style> -->
-	<link rel="stylesheet" href="css/style.min.css?_v=20230303180233">
+	<link rel="stylesheet" href="css/style.min.css?_v=20230313173020">
 	<link rel="shortcut icon" href="favicon.ico">
 	<!-- <meta name="robots" content="noindex, nofollow"> -->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
 
 <body>
 	<div class="wrapper">
-		<header class="header" data-scroll="90" data-scroll-show>
+		<header class="header header_transparent" data-scroll="90" data-scroll-show>
 			<div class="header__container">
 				<div class="header__logo logo">
 					<a href="home.html" class="logo__link">
@@ -31,17 +31,19 @@
 							<li><a href="">Mail Forwarding</a></li>
 							<li><a href="drop-shipping.html">Dropshipping</a></li>
 							<li><a href="">Returns</a></li>
-							<li><a href="">Contact Us</a></li>
+							<li><a href="prep-service.html">Amazon Prep Services</a></li>
+							<li><a href="contact.html">Contact Us</a></li>
 							<li><a href="virtual-address.html">Virtual address</a></li>
 						</ul>
 					</nav>
 
 					<div class="header__actions" data-da=".menu__body, 575, last">
-						<button type="button" class="btn btn_blue" data-popup="#login">Log In</button>
-						<button type="button" class="btn btn_violet" data-popup="#login">
+						<a href="login.html" class="btn btn_blue">Log In</a>
+
+						<a href="get-started.html" class="btn btn_violet">
 							<span>Get Started</span>
 							<i class="_icon-arrow"></i>
-						</button>
+						</a>
 					</div>
 
 					<button type="button" class="menu__icon icon-menu"><span></span></button>
@@ -49,17 +51,38 @@
 			</div>
 		</header>
 		<main class="page">
-			<section class="template12">
+			<section class="template12 _firstscreen" style="background-color: #fff;">
+				<div class="template12__bg"><picture><source srcset="img/virtual/template12-bg.webp" type="image/webp"><img src="img/virtual/template12-bg.png" alt=""></picture></div>
+
 				<div class="template12__container">
-					<div class="template12__text _content">
-						<h1>Virtual address</h1>
-						<p></p>
-						<p>One of the best things about partnering with Intercommerce Logistics is the provision of a virtual address in US or Canada. This free address is ideal for shopping at online retailers in the states, as it saves huge amounts on overseas shipping costs. You can use it for packages, as well as magazines and standard mail delivery.</p>
-					</div>
-					<div class="template12__media">
-						<div class="template12__icon template12__icon_first" data-prlx-mouse=""><img src="img/virtual/template12-icon-1.svg" alt="" loading="lazy"></div>
-						<div class="template12__image" data-prlx-mouse="" data-prlx-dxr data-prlx-dyr data-prlx-cy="200" data-prlx-cx="300"><picture><source srcset="img/virtual/template12-image.webp" type="image/webp"><img src="img/virtual/template12-image.png" alt=""></picture></div>
-						<div class="template12__icon template12__icon_second" data-prlx-mouse=""><img src="img/virtual/template12-icon-2.svg" alt="" loading="lazy"></div>
+					<div class="template12__row">
+						<div class="template12__column col-12 col-md-6">
+							<div class="template12__text _content">
+								<h1>Virtual address</h1>
+								<p></p>
+								<p>One of the best things about partnering with Intercommerce Logistics is the provision of a virtual
+									address in US or Canada. This free address is ideal for shopping at online retailers in the states,
+									as it saves huge amounts on overseas shipping costs. You can use it for packages, as well as
+									magazines and standard mail delivery.</p>
+							</div>
+						</div>
+						<div class="template12__column col-12 col-md-5">
+							<div class="template12__media">
+								<div class="template12__icon" data-prlx-mouse="">
+									<div style="top: 47%; left: -11%; max-width: 32%;">
+										<img src="img/virtual/template12-icon-1.svg" alt="" loading="lazy">
+									</div>
+								</div>
+								<div class="template12__image" data-prlx-mouse="" data-prlx-dxr data-prlx-dyr data-prlx-cy="200" data-prlx-cx="300">
+									<picture><source srcset="img/virtual/template12-image.webp" type="image/webp"><img src="img/virtual/template12-image.png" alt=""></picture>
+								</div>
+								<div class="template12__icon template12__icon_second" data-prlx-mouse="">
+									<div style="top: 10.5%; right: 36px; max-width: 15%;">
+										<img src="img/virtual/template12-icon-2.svg" alt="" loading="lazy">
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</section>
@@ -172,9 +195,14 @@
 								</div>
 								<div class="service-item__right">
 									<div class="_content">
-										<p>Many retailers in the US refuse to ship internationally, which prevents overseas shoppers from enjoying excellent deals on popular websites. However, with your free US address, you can shop online at major American retailers without worrying about staggering shipping costs. Even if you purchase from multiple retailers, our shipping agents can consolidate and ship all your items together.</p>
+										<p>Many retailers in the US refuse to ship internationally, which prevents overseas
+											shoppers from enjoying excellent deals on popular websites. However, with your free US
+											address, you can shop online at major American retailers without worrying about
+											staggering shipping costs. Even if you purchase from multiple retailers, our shipping
+											agents can consolidate and ship all your items together.</p>
 										<p></p>
-										<h3>Intercommerce Logistics agents can set up payment options that don’t require a US billing address — or even do the shopping for you!</h3>
+										<h3>Intercommerce Logistics agents can set up payment options that don’t require a US
+											billing address — or even do the shopping for you!</h3>
 									</div>
 								</div>
 							</div>
@@ -491,7 +519,8 @@
 									<div class="service-item__right">
 										<div class="_content">
 											<h3>Shopping</h3>
-											<p>Shop at all your favorite online stores and input your new US or Canadian address when checking out.</p>
+											<p>Shop at all your favorite online stores and input your new US or Canadian address
+												when checking out.</p>
 										</div>
 									</div>
 								</div>
@@ -598,7 +627,11 @@
 									<div class="service-item__right">
 										<div class="_content">
 											<h3>Receiving</h3>
-											<p>A member of our shipping agent network will receive your purchased products, inspect them for damage, and take pictures. These photos will be added to our cloud-based client portal for your perusal and approval. If additional purchases are incoming, we can store your purchased items until we can consolidate them into a larger shipment (up to three months).</p>
+											<p>A member of our shipping agent network will receive your purchased products, inspect
+												them for damage, and take pictures. These photos will be added to our cloud-based
+												client portal for your perusal and approval. If additional purchases are incoming,
+												we can store your purchased items until we can consolidate them into a larger
+												shipment (up to three months).</p>
 										</div>
 									</div>
 								</div>
@@ -701,7 +734,8 @@
 									<div class="service-item__right">
 										<div class="_content">
 											<h3>Shipping</h3>
-											<p>After approving the items, you will decide on the shipping carrier. The shipping agent will begin the shipping process immediately. <br>
+											<p>After approving the items, you will decide on the shipping carrier. The shipping
+												agent will begin the shipping process immediately. <br>
 												If you require express shipping, we can expedite the process for a small fee.</p>
 										</div>
 									</div>
@@ -831,7 +865,9 @@
 									<div class="service-item__right">
 										<div class="_content">
 											<h3>Premium service</h3>
-											<p>You can also sign up for our premium service offerings, including free consolidation, custom packaging for oversized/fragile items, and more comprehensive inspections.</p>
+											<p>You can also sign up for our premium service offerings, including free
+												consolidation, custom packaging for oversized/fragile items, and more comprehensive
+												inspections.</p>
 										</div>
 									</div>
 								</div>
@@ -842,13 +878,19 @@
 			</section>
 
 			<section class="template13">
+				<div class="template13__bg"><picture><source srcset="img/prep-service/template13-bg.webp" type="image/webp"><img src="img/prep-service/template13-bg.jpg" alt=""></picture></div>
+
 				<div class="template13__container">
 					<div class="template13__image"><picture><source srcset="img/virtual/template13-1.webp" type="image/webp"><img src="img/virtual/template13-1.png" alt="" loading="lazy"></picture></div>
 					<div class="template13__text _content">
 						<h2>Save money at your favorite US stores</h2>
 						<p></p>
-						<p>We challenge you to find fulfillment companies with lower shipping rates; our competitors don’t come close to the savings we offer. Consolidating multiple packages (over the course of weeks or months), can save you a small fortune in shipping costs.</p>
-						<p>By working with trusted international carriers, you will also have access to reduced member rates and other discounts. If you have a US address in Montana, New Hampshire, Delaware, Oregon or Nevada, you will also be able to avoid sales tax!</p>
+						<p>We challenge you to find fulfillment companies with lower shipping rates; our competitors don’t
+							come close to the savings we offer. Consolidating multiple packages (over the course of weeks or
+							months), can save you a small fortune in shipping costs.</p>
+						<p>By working with trusted international carriers, you will also have access to reduced member rates
+							and other discounts. If you have a US address in Montana, New Hampshire, Delaware, Oregon or
+							Nevada, you will also be able to avoid sales tax!</p>
 					</div>
 				</div>
 			</section>
@@ -864,13 +906,16 @@
 								<div class="service-item__left">
 									<div class="service-item__media">
 										<div class="_content">
-											<h3>For that reason, we have developed a <span style="color: #FB7354;">Personal Shopper</span> service to eliminate your stress and worry.</h3>
+											<h3>For that reason, we have developed a <span style="color: #FB7354;">Personal
+													Shopper</span> service to eliminate your stress and worry.</h3>
 										</div>
 									</div>
 								</div>
 								<div class="service-item__right">
 									<div class="_content">
-										<p>Everyone knows that shopping at online US retailers when you live abroad can be an expensive hassle. Some American banks will refuse your payment methods, and the process of filing customs paperwork is exhausting.</p>
+										<p>Everyone knows that shopping at online US retailers when you live abroad can be an
+											expensive hassle. Some American banks will refuse your payment methods, and the process
+											of filing customs paperwork is exhausting.</p>
 									</div>
 								</div>
 							</div>
@@ -947,7 +992,10 @@
 								</div>
 								<div class="service-item__right">
 									<div class="_content">
-										<p>All you need to do is surf online, pick the products you want, send us the URLs of the items, and we’ll handle the rest. The last step is depositing the necessary funds into your secure Intercommerce Logistics account. Once we verify that the items are still available, we will handle the actual purchasing process.</p>
+										<p>All you need to do is surf online, pick the products you want, send us the URLs of the
+											items, and we’ll handle the rest. The last step is depositing the necessary funds into
+											your secure Intercommerce Logistics account. Once we verify that the items are still
+											available, we will handle the actual purchasing process.</p>
 									</div>
 								</div>
 							</div>
@@ -1022,7 +1070,10 @@
 								</div>
 								<div class="service-item__right">
 									<div class="_content">
-										<p>With this service, you can entirely avoid the complexities of international purchasing and shipping. After your desired items land at our shipping center, you will be notified and allowed to approve the purchased items via real-time inspection photos. After receiving your confirmation, we’ll ship the items right to your doorstep.</p>
+										<p>With this service, you can entirely avoid the complexities of international purchasing
+											and shipping. After your desired items land at our shipping center, you will be
+											notified and allowed to approve the purchased items via real-time inspection photos.
+											After receiving your confirmation, we’ll ship the items right to your doorstep.</p>
 									</div>
 								</div>
 							</div>
@@ -1042,7 +1093,8 @@
 								<div class="card-template8__img"><picture><source srcset="img/virtual/template8-2-1.webp" type="image/webp"><img src="img/virtual/template8-2-1.jpg" alt="" loading="lazy"></picture></div>
 								<div class="card-template8__body">
 									<div class="_content">
-										<p>Using the customer service portal provides anytime access to product status updates, or you can opt-in for real-time SMS and email updates.</p>
+										<p>Using the customer service portal provides anytime access to product status updates, or
+											you can opt-in for real-time SMS and email updates.</p>
 									</div>
 								</div>
 							</div>
@@ -1052,7 +1104,8 @@
 								<div class="card-template8__img"><picture><source srcset="img/virtual/template8-2-2.webp" type="image/webp"><img src="img/virtual/template8-2-2.jpg" alt="" loading="lazy"></picture></div>
 								<div class="card-template8__body">
 									<div class="_content">
-										<p>Before any package leaves the country, you will have final approval based on inspection photos and order specifications.</p>
+										<p>Before any package leaves the country, you will have final approval based on inspection
+											photos and order specifications.</p>
 									</div>
 								</div>
 							</div>
@@ -1062,7 +1115,8 @@
 								<div class="card-template8__img"><picture><source srcset="img/virtual/template8-2-3.webp" type="image/webp"><img src="img/virtual/template8-2-3.jpg" alt="" loading="lazy"></picture></div>
 								<div class="card-template8__body">
 									<div class="_content">
-										<p>Our dedicated customer service agents are available 24/7 to handle questions or issues that may arise.</p>
+										<p>Our dedicated customer service agents are available 24/7 to handle questions or issues
+											that may arise.</p>
 									</div>
 								</div>
 							</div>
@@ -1090,7 +1144,8 @@
 						<div class="rates__item">
 							<div class="rates__text _content">
 								<h3>Consolidate to Save for </h3>
-								<p>When you consolidate your purchases, you save even more on shipping costs, up to 80% off standard rates! </p>
+								<p>When you consolidate your purchases, you save even more on shipping costs, up to 80% off
+									standard rates! </p>
 							</div>
 							<div class="rates__price">
 								<span>$7</span> per package
@@ -1099,7 +1154,9 @@
 						<div class="rates__item">
 							<div class="rates__text _content">
 								<h3>Special Requests </h3>
-								<p>Shipping fragile items overseas can be stressful! If you have a specific concern, from package integrity to declaration forms, our agents will help make sure it’s all taken care of. </p>
+								<p>Shipping fragile items overseas can be stressful! If you have a specific concern, from
+									package integrity to declaration forms, our agents will help make sure it’s all taken care
+									of. </p>
 							</div>
 							<div class="rates__price rates__price_empty">
 								on request
@@ -1108,7 +1165,8 @@
 						<div class="rates__item">
 							<div class="rates__text _content">
 								<h3>Customs Declaration </h3>
-								<p>Let us handle the paperwork! This can be used for either individual packages or bulk shipping. </p>
+								<p>Let us handle the paperwork! This can be used for either individual packages or bulk
+									shipping. </p>
 							</div>
 							<div class="rates__price rates__price_empty">
 								<span>$10</span>
@@ -1117,7 +1175,8 @@
 						<div class="rates__item">
 							<div class="rates__text _content">
 								<h3>Premium Processing </h3>
-								<p>If you have to have that item right away, get first priority with our premium expedited processing.</p>
+								<p>If you have to have that item right away, get first priority with our premium expedited
+									processing.</p>
 							</div>
 							<div class="rates__price rates__price_empty">
 								<span>$5</span>
@@ -1126,7 +1185,8 @@
 						<div class="rates__item">
 							<div class="rates__text _content">
 								<h3>More Photos Please </h3>
-								<p>All packages come with three condition photos free, but if you would like more photos from different angles, our agents can take care of that for a small additional fee.</p>
+								<p>All packages come with three condition photos free, but if you would like more photos from
+									different angles, our agents can take care of that for a small additional fee.</p>
 							</div>
 							<div class="rates__price rates__price_empty">
 								<span>$2-5</span>
@@ -1135,7 +1195,8 @@
 						<div class="rates__item">
 							<div class="rates__text _content">
 								<h3>Extra Care </h3>
-								<p>Want extra wrapping or tape for an item? Extra care means our agents will make sure your item gets to you in one piece with extra bubble wrap or whatever it calls for. </p>
+								<p>Want extra wrapping or tape for an item? Extra care means our agents will make sure your item
+									gets to you in one piece with extra bubble wrap or whatever it calls for. </p>
 							</div>
 							<div class="rates__price rates__price_empty">
 								<span>$15</span>
@@ -1144,7 +1205,9 @@
 						<div class="rates__item">
 							<div class="rates__text _content">
 								<h3>Shipping Insurance</h3>
-								<p>Purchasing items and shipping them overseas can be risky no matter what. <br> We recommend purchasing shipping insurance for the full value of your item while it is being delivered to you. </p>
+								<p>Purchasing items and shipping them overseas can be risky no matter what. <br> We recommend
+									purchasing shipping insurance for the full value of your item while it is being delivered to
+									you. </p>
 							</div>
 							<div class="rates__price rates__price_empty">
 								on request
@@ -1176,7 +1239,10 @@
 								<span>How can I calculate shipping costs?</span>
 							</button>
 							<div class="spollers__body _content">
-								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and Oregon, but you would need a registered address in those states to take advantage of that tax break. In all other cases, sales tax will be added to your final total, calculated based on the state in your address.</p>
+								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and
+									Oregon, but you would need a registered address in those states to take advantage of that tax
+									break. In all other cases, sales tax will be added to your final total, calculated based on
+									the state in your address.</p>
 							</div>
 						</div>
 						<div class="spollers__item">
@@ -1185,7 +1251,10 @@
 								<span>Will I be notified when my package is received by a shipping agent?</span>
 							</button>
 							<div class="spollers__body _content">
-								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and Oregon, but you would need a registered address in those states to take advantage of that tax break. In all other cases, sales tax will be added to your final total, calculated based on the state in your address.</p>
+								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and
+									Oregon, but you would need a registered address in those states to take advantage of that tax
+									break. In all other cases, sales tax will be added to your final total, calculated based on
+									the state in your address.</p>
 							</div>
 						</div>
 						<div class="spollers__item">
@@ -1194,7 +1263,10 @@
 								<span>What is the process after you receive my purchase?</span>
 							</button>
 							<div class="spollers__body _content">
-								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and Oregon, but you would need a registered address in those states to take advantage of that tax break. In all other cases, sales tax will be added to your final total, calculated based on the state in your address.</p>
+								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and
+									Oregon, but you would need a registered address in those states to take advantage of that tax
+									break. In all other cases, sales tax will be added to your final total, calculated based on
+									the state in your address.</p>
 							</div>
 						</div>
 						<div class="spollers__item">
@@ -1203,7 +1275,10 @@
 								<span>Is there anything I can’t ship?</span>
 							</button>
 							<div class="spollers__body _content">
-								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and Oregon, but you would need a registered address in those states to take advantage of that tax break. In all other cases, sales tax will be added to your final total, calculated based on the state in your address.</p>
+								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and
+									Oregon, but you would need a registered address in those states to take advantage of that tax
+									break. In all other cases, sales tax will be added to your final total, calculated based on
+									the state in your address.</p>
 							</div>
 						</div>
 						<div class="spollers__item">
@@ -1212,7 +1287,10 @@
 								<span>How do I return at item?</span>
 							</button>
 							<div class="spollers__body _content">
-								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and Oregon, but you would need a registered address in those states to take advantage of that tax break. In all other cases, sales tax will be added to your final total, calculated based on the state in your address.</p>
+								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and
+									Oregon, but you would need a registered address in those states to take advantage of that tax
+									break. In all other cases, sales tax will be added to your final total, calculated based on
+									the state in your address.</p>
 							</div>
 						</div>
 						<div class="spollers__item">
@@ -1221,7 +1299,10 @@
 								<span>Can I mail items under a different name?</span>
 							</button>
 							<div class="spollers__body _content">
-								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and Oregon, but you would need a registered address in those states to take advantage of that tax break. In all other cases, sales tax will be added to your final total, calculated based on the state in your address.</p>
+								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and
+									Oregon, but you would need a registered address in those states to take advantage of that tax
+									break. In all other cases, sales tax will be added to your final total, calculated based on
+									the state in your address.</p>
 							</div>
 						</div>
 						<div class="spollers__item">
@@ -1230,16 +1311,23 @@
 								<span>Do I need to pay US sales tax?</span>
 							</button>
 							<div class="spollers__body _content">
-								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and Oregon, but you would need a registered address in those states to take advantage of that tax break. In all other cases, sales tax will be added to your final total, calculated based on the state in your address.</p>
+								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and
+									Oregon, but you would need a registered address in those states to take advantage of that tax
+									break. In all other cases, sales tax will be added to your final total, calculated based on
+									the state in your address.</p>
 							</div>
 						</div>
 						<div class="spollers__item">
 							<button type="button" data-spoller class="spollers__title">
 								<i class="spollers__icon"></i>
-								<span>I purchased multiple items in the same transaction, but the retailer packages them individually. Are there charges for each package?</span>
+								<span>I purchased multiple items in the same transaction, but the retailer packages them
+									individually. Are there charges for each package?</span>
 							</button>
 							<div class="spollers__body _content">
-								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and Oregon, but you would need a registered address in those states to take advantage of that tax break. In all other cases, sales tax will be added to your final total, calculated based on the state in your address.</p>
+								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and
+									Oregon, but you would need a registered address in those states to take advantage of that tax
+									break. In all other cases, sales tax will be added to your final total, calculated based on
+									the state in your address.</p>
 							</div>
 						</div>
 						<div class="spollers__item">
@@ -1248,7 +1336,10 @@
 								<span>Do I need shipping insurance?</span>
 							</button>
 							<div class="spollers__body _content">
-								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and Oregon, but you would need a registered address in those states to take advantage of that tax break. In all other cases, sales tax will be added to your final total, calculated based on the state in your address.</p>
+								<p>There is no sales tax for online purchases in Montana, Nevada, New Hampshire, Delaware and
+									Oregon, but you would need a registered address in those states to take advantage of that tax
+									break. In all other cases, sales tax will be added to your final total, calculated based on
+									the state in your address.</p>
 							</div>
 						</div>
 					</div>
@@ -1308,9 +1399,9 @@
 		</div>
 	</div>
 </div> -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js?_v=20230303180233"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js?_v=20230303180233"></script>
-	<script src="js/app.min.js?_v=20230303180233"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js?_v=20230313173020"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js?_v=20230313173020"></script>
+	<script src="js/app.min.js?_v=20230313173020"></script>
 </body>
 
 </html>

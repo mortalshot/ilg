@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+@@include('html/_head.htm',{
+"title":"Drop shipping"
+})
+
+<body>
+   <div class="wrapper">
+      @@include('html/_header.htm',{
+      "class": "header_transparent"
+      })
+      <main class="page">
+         <section class="template25 _firstscreen">
+            <a href="https://goo.gl/maps/qXXbrUpLB3oksb6u7" target="_blank" class="template25__bg">
+               <img src="@img/map.jpg" alt="">
+
+               <picture>
+                  <source srcset="@img/map.jpg" media="(min-width: 991.98px)">
+                  <source srcset="@img/map-tablet.jpg" media="(min-width: 767.98px)">
+                  <source srcset="@img/map-sm.jpg" media="(min-width: 574.98px)">
+                  <img src="@img/map-xs.jpg" alt="" loading="lazy">
+               </picture>
+            </a>
+
+            <div class="template25__container">
+               <div class="template25__wrapper">
+                  <div class="template25__heading _heading _content">
+                     <h1>Contact us</h1>
+                  </div>
+
+                  <div class="template25__contacts contacts">
+                     <div class="contacts__item contacts__item_address">
+                        <a href="https://goo.gl/maps/qXXbrUpLB3oksb6u7" target="_blank" class="contacts__link">120 N
+                           Racine Ave. Suite 100Chicago, IL 60607</a>
+                     </div>
+
+                     <div class="contacts__item contacts__item_phone">
+                        <a href="tel:18444744726" target="_blank" class="contacts__link">1-844-474-4726</a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="template26" style="background-color: #fff;">
+            <div class="template26__container">
+               <div class="template26__heading _content _heading">
+                  <h2>Send your message</h2>
+               </div>
+
+               <form action="" class="template26__form form">
+                  <div class="form__row">
+                     <div class="form__item col-12 col-sm-6 col-md-4">
+                        <input type="text" name="contact-name" placeholder="First name" class="form__input">
+                     </div>
+                     <div class="form__item col-12 col-sm-6 col-md-4">
+                        <input type="text" name="contact-lastname" placeholder="Last name" class="form__input">
+                     </div>
+                     <div class="form__item col-12 col-sm-6 col-md-4">
+                        <input type="email" name="contact-email" placeholder="E-mail"
+                           class="form__input form__input_email">
+                     </div>
+                     <div class="form__item col-12 col-sm-6 col-md-4">
+                        <input type="text" name="contact-phone" placeholder="Phone"
+                           class="form__input form__input_phone">
+                     </div>
+                     <div class="form__item col-12 col-sm-6 col-md-4">
+                        <input type="text" name="contact-company" placeholder="Company name" class="form__input">
+                     </div>
+                     <div class="form__item col-12 col-sm-6 col-md-4">
+                        <select name="contact-shipments" class="form">
+                           <option value="" selected>Current monthly shipments</option>
+                           <option value="2">2</option>
+                           <option value="3">3</option>
+                           <option value="4">4</option>
+                        </select>
+                     </div>
+                     <div class="form__item col-12 col-sm-6 col-md-8">
+                        <textarea autocomplete="off" name="Enter your message" rows="7" placeholder="Enter your message"
+                           class="form__input"></textarea>
+                     </div>
+                     <div class="form__item col-12 col-sm-6 col-md-4">
+                        <div class="form__submit-wrapper">
+                           <div class="form__captcha"><img src="@img/icons/recaptcha.jpg" alt="" loading="lazy"></div>
+                           <div class="form__submit btn btn_violet _icon-arrow" data-content="Contact us">
+                              <input class="wpcf7-form-control has-spinner wpcf7-submit" type="submit"
+                                 value="Contact us">
+                              <span class="wpcf7-spinner"></span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+      </main>
+      @@include('html/_footer.htm',{})
+   </div>
+   @@include('html/_popup.htm',{})
+   @@include('html/_js.htm',{})
+</body>
+
+</html>
