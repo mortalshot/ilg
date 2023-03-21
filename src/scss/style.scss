@@ -624,7 +624,7 @@ body {
 
 .service-item {
 	display: grid;
-	align-items: flex-start;
+	align-items: center;
 	@include adaptiveValue("column-gap", 60, 20, 1920, 992, 1);
 	row-gap: rem(40);
 
@@ -689,7 +689,7 @@ body {
 
 	// .service-item__right
 	&__right {
-		align-self: center;
+		// align-self: center;
 
 		._content {
 			h,
@@ -707,6 +707,31 @@ body {
 
 		._hide & {
 			opacity: 0;
+		}
+
+		ul {
+			row-gap: rem(52);
+			padding-top: rem(7);
+			padding-bottom: rem(7);
+			padding-left: 0;
+		}
+
+		li {
+			list-style-type: none;
+			position: relative;
+			padding-left: rem(64);
+
+			&::before {
+				content: "";
+				display: block;
+				width: rem(48);
+				height: rem(48);
+				background: #fbdcaa url(../img/returns/check.svg) no-repeat center/rem(24);
+				border-radius: rem(18);
+				position: absolute;
+				left: 0;
+				top: rem(-7);
+			}
 		}
 	}
 
@@ -2396,9 +2421,29 @@ body {
 		color: $White;
 	}
 
+	// .template16__image
+	&__image {
+		padding: 0px !important;
+		position: relative;
+
+		@media (max-width: $mobileM) {
+			padding-bottom: rem(240) !important;
+		}
+
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
 	// .template16_reverse
 	&_reverse {
-		.template16__accent {
+		.template16__accent,
+		.template16__image {
 			grid-row: 1/2;
 		}
 	}
@@ -3403,5 +3448,46 @@ body {
 
 	// .template29-quote__position
 	&__position {
+	}
+}
+
+.template30 {
+	position: relative;
+
+	&._firstscreen {
+		@include adaptiveValue("padding-top", 220, 100);
+	}
+
+	// .template30__bg
+	&__bg {
+		img {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: top;
+		}
+	}
+
+	// .template30__container
+	&__container {
+	}
+
+	// .template30__wrapper
+	&__wrapper {
+		background-color: $White;
+		border-radius: rem(48);
+		@include adaptiveValue("padding-top", 80, 48);
+		@include adaptiveValue("padding-bottom", 108, 48);
+		@include adaptiveValue("padding-left", 100, 36, 1920, 992, 1);
+		@include adaptiveValue("padding-right", 100, 36, 1920, 992, 1);
+		position: relative;
+		z-index: 1;
+		max-width: rem(1140);
+		margin-left: auto;
+		margin-right: auto;
+		position: relative;
 	}
 }

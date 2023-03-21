@@ -167,6 +167,10 @@
 		font-family: $fontSecond;
 		@include adaptiveValue("font-size", 20, 14, 1920, 375, 1);
 		line-height: math.div(24, 20);
+
+		.logo-white & {
+			color: $White;
+		}
 	}
 }
 

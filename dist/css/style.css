@@ -1103,6 +1103,24 @@ textarea.form__input {
   margin-right: 6rem !important;
 }
 
+.align-items-center {
+  -webkit-box-align: center !important;
+      -ms-flex-align: center !important;
+          align-items: center !important;
+}
+
+.align-items-start {
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+}
+
+.align-items-end {
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+}
+
 h1,
 .title-h1 {
   font-family: "RobotoSlab";
@@ -1240,6 +1258,9 @@ section:first-child {
 
 ._content ol {
   counter-reset: item;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1.5rem;
 }
 
 ._content ol li {
@@ -1254,6 +1275,9 @@ section:first-child {
   		padding-left: calc(1.5rem + 1 * (100vw - 23.4375rem) / 49.6875);
   	} */
   list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1.5rem;
 }
 
 ._content ol li::before {
@@ -1261,6 +1285,9 @@ section:first-child {
   counter-increment: item;
   position: absolute;
   left: 0;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 ._content ol li > ol {
@@ -1278,7 +1305,7 @@ section:first-child {
   display: grid;
   -ms-flex-line-pack: start;
       align-content: flex-start;
-  row-gap: 0.5rem;
+  row-gap: 1.5rem;
   margin: 1rem 0;
 }
 
@@ -1772,6 +1799,10 @@ section:first-child {
   		font-size: calc(0.875rem + 0.375 * (100vw - 23.4375rem) / 96.5625);
   	} */
   line-height: 1.2;
+}
+
+.logo-white .logo__text {
+  color: #fff;
 }
 
 .menu ul {
@@ -2469,9 +2500,9 @@ section:first-child {
 .service-item {
   display: -ms-grid;
   display: grid;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-column-gap: clamp( 1.25rem , -1.4224137931rem  +  4.3103448276vw , 3.75rem );
      -moz-column-gap: clamp( 1.25rem , -1.4224137931rem  +  4.3103448276vw , 3.75rem );
           column-gap: clamp( 1.25rem , -1.4224137931rem  +  4.3103448276vw , 3.75rem );
@@ -2591,12 +2622,6 @@ section:first-child {
   opacity: 0;
 }
 
-.service-item__right {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
-
 .service-item__right ._content h1,
 .service-item__right ._content h2,
 .service-item__right ._content .title-h1,
@@ -2620,6 +2645,31 @@ section:first-child {
 
 ._hide .service-item ._content {
   opacity: 0;
+}
+
+.service-item ._content ul {
+  row-gap: 3.25rem;
+  padding-top: 0.4375rem;
+  padding-bottom: 0.4375rem;
+  padding-left: 0;
+}
+
+.service-item ._content li {
+  list-style-type: none;
+  position: relative;
+  padding-left: 4rem;
+}
+
+.service-item ._content li::before {
+  content: "";
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  background: #fbdcaa url(../img/returns/check.svg) no-repeat center/1.5rem;
+  border-radius: 1.125rem;
+  position: absolute;
+  left: 0;
+  top: -0.4375rem;
 }
 
 .service-item #border {
@@ -4803,7 +4853,23 @@ section:first-child {
   color: #fff;
 }
 
-.template16_reverse .template16__accent {
+.template16__image {
+  padding: 0px !important;
+  position: relative;
+}
+
+.template16__image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.template16_reverse .template16__accent,
+.template16_reverse .template16__image {
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
@@ -6096,6 +6162,81 @@ section:first-child {
 
 .template29-quote__name {
   font-weight: 600;
+}
+
+.template30 {
+  position: relative;
+}
+
+.template30._firstscreen {
+  padding-top: clamp( 6.25rem , 2.7122641509rem  +  15.0943396226vw , 13.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(6.25rem + 7.5 * (100vw - 23.4375rem) / 49.6875);
+  	} */
+}
+
+.template30__bg img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+
+.template30__wrapper {
+  background-color: #fff;
+  border-radius: 3rem;
+  padding-top: clamp( 3rem , 2.0566037736rem  +  4.0251572327vw , 5rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-top: $propertyValue) {
+  		padding-top: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-top: $propertyValue) {
+  		padding-top: calc(3rem + 2 * (100vw - 23.4375rem) / 49.6875);
+  	} */
+  padding-bottom: clamp( 3rem , 1.2311320755rem  +  7.5471698113vw , 6.75rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-bottom: $propertyValue) {
+  		padding-bottom: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-bottom: $propertyValue) {
+  		padding-bottom: calc(3rem + 3.75 * (100vw - 23.4375rem) / 49.6875);
+  	} */
+  padding-left: clamp( 2.25rem , -2.025862069rem  +  6.8965517241vw , 6.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-left: $propertyValue) {
+  		padding-left: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-left: $propertyValue) {
+  		padding-left: calc(2.25rem + 4 * (100vw - 62rem) / 58);
+  	} */
+  padding-right: clamp( 2.25rem , -2.025862069rem  +  6.8965517241vw , 6.25rem );
+  /* 	// Если поддерживается clamp();
+  	@supports (padding-right: $propertyValue) {
+  		padding-right: $propertyValue;
+  	}
+  	// Если не поддерживается clamp();
+  	@supports not (padding-right: $propertyValue) {
+  		padding-right: calc(2.25rem + 4 * (100vw - 62rem) / 58);
+  	} */
+  position: relative;
+  z-index: 1;
+  max-width: 71.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
 }
 
 .swiper {
@@ -7403,6 +7544,10 @@ section:first-child {
 
   .template15__media {
     max-width: 20rem;
+  }
+
+  .template16__image {
+    padding-bottom: 15rem !important;
   }
 }
 

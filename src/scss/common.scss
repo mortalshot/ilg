@@ -185,6 +185,21 @@ $spacer: 16;
    }
 }
 
+.align-items {
+   // .align-items-center
+   &-center {
+      align-items: center !important;
+   }
+   // .align-items-start
+   &-start {
+      align-items: flex-start !important;
+   }
+   // .align-items-end
+   &-end {
+      align-items: flex-end !important;
+   }
+}
+
 h,
 .title-h {
    &1 {
@@ -260,17 +275,24 @@ section {
 
    ol {
       counter-reset: item;
+      display: grid;
+      row-gap: rem(24);
 
       li {
          position: relative;
          @include adaptiveValue("padding-left", 40, 24);
          list-style-type: none;
+         display: grid;
+         row-gap: rem(24);
 
          &::before {
             content: counter(item) ".";
             counter-increment: item;
             position: absolute;
             left: 0;
+            font-weight: 700;
+            font-size: rem(24);
+            line-height: math.div(36, 24);
          }
 
          & > ol {
@@ -290,7 +312,7 @@ section {
       padding-left: rem(20);
       display: grid;
       align-content: flex-start;
-      row-gap: rem(8);
+      row-gap: rem(24);
       margin: rem(16) 0;
 
       li {
